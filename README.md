@@ -32,6 +32,25 @@ npm run build
 ```
 En browser ir a [http://0.0.0.0:8080](http://0.0.0.0:8080) o [http://localhost:8080](http://localhost:8080)
 
+###Estilos de código:
+* Agrega sugerencias de Jonh Papa. https://angular.io/docs/ts/latest/guide/style-guide.html
+- Limite de 400 lineas de código por archivo.
+- Limite de 75 lineas de código por funcion.
+- Componentes upper camel case.
+- Nomenclatura de nombre de archivo bajo el patron feature.type.ts
+- Utilice guion para separar el nombre descriptivo.
+- Utilice tipos de nombre convencionales como  .service , .component , .pipe
+- Poner bootstrapping  y logica de plataforma en main.js
+- Utilice upper camel case para servicios.
+- Utilice upper camel case para nombres de selectores o directivas. ¿?
+- Utilice prefijos de nombres personalizados para los selectores. eje toh.... que representa Tour o f Heroes ¿?
+- Nombre de archivos concistentes para los "@Pipe"
+- Archivos para prueba  que tengas el sufijo ".spec". Ej: heroes.component.spec.ts, logger.service.spec.ts, ellipsis.pipe.spec.ts. (En pruebas con Karma)
+- Las pruebas de extremo a extremo q tengan como sufijo ".e2e-spec". (En pruebas con Protactor)
+- utilizar upper camel case para nombre de clases
+- Utilice mayusculas con guion bajo para nombre de constantes. Ej: exportconst HEROES_URL ='api/heroes';
+- low camel case para propiedades y nombre de método.
+- No dejar espacios en las importaciones.
 
 ###Descripcion de Archivos:
 - package.json : Definición nom de dependencias para modo desarrollo y producción.
