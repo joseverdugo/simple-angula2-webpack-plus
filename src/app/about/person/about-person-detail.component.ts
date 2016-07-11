@@ -28,8 +28,6 @@ export class AboutPersonDetailComponent  implements OnInit, OnDestroy {
      let id = +this.route.snapshot.params['id'];
 
      console.log("Con snapshot:" + id);
-
-     this.router.subscribe(location => console.log("location changed: " + location));
   } 
 
   ngOnDestroy() {
