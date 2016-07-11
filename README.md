@@ -32,8 +32,8 @@ npm run build
 ```
 En browser ir a [http://0.0.0.0:8080](http://0.0.0.0:8080) o [http://localhost:8080](http://localhost:8080)
 
-###Estilos de código:
-* Agrega sugerencias de Jonh Papa. https://angular.io/docs/ts/latest/guide/style-guide.html
+###Guia de estilo de código (Traducción no validada, y)
+Agrega sugerencias de Jonh Papa. https://angular.io/docs/ts/latest/guide/style-guide.html
 - Limite de 400 lineas de código por archivo.
 - Limite de 75 lineas de código por funcion.
 - Componentes upper camel case.
@@ -70,10 +70,39 @@ export * from './about.component';
 - Utiice @Input y @Output para indicar las entradas y salida de los componentes. Style 05-12
 - Evitar renombrar los parametros de entreda o salida de los componentes. Ej: @Input('labelAttribute') 
 - Dejar primero los properties en una clase, luego método publicos y despues los privados.
-- 
+- Dejar logica en service y en componente solo lo relacionado a la vista
+- Evitar utilizar el prefijo "on" para metodos de eventos.
+- Dejar logica de presentacion en clase componente y no en la plantilla html.
+- Utilizar directiva para mejorar un elemento cuando no tienen una plantilla.
+- Utilizar @HostListener y @HostBinding en lugar de @Directive @Component. (Ver usos)
+- Servicios como singleton en la misma inyección.  Ej: dejar llamada rest en un Service.
+- Crear servicios con una sola funcionalidad. (07-02)
+- Prover inyecciones de servicios de altonivel para reutilizar el controladores de nivel inferior, utilizando la jeraquia q provee angular 2. (Style 07-03). 
+- Utilizar @Injectable en lugar de @Inject. Mas detalle en Style 07-04
+- Style 08-01: ?
+- Style 09-01: ?
+- Apendice 1: Utilice Codelyzer: https://angular.io/docs/ts/latest/guide/style-guide.html#A-01
+- Apendice 2: Utilice template y snippets. Mas info en: https://angular.io/docs/ts/latest/guide/style-guide.html#A-02
+
+###Aumentar la productidad con un buen editor
+Elija un editor que considerare:
+- Angular 2
+- TypeScipt
+- HTML 5
+- Sass o less.
+- Autocompletar
+- Snippets
+- Servicios Rest
+
+###Nuevos cambios:
+- Agrega Router según: https://angular.io/docs/ts/latest/guide/router.html
+
+###Analisis de codigo
+- Utilice codelyzer. Mas info en https://www.npmjs.com/package/codelyzer
+
 
 ###Descripcion de Archivos:
-- package.json : Definición nom de dependencias para modo desarrollo y producción.
+- package.json : Definición npm de dependencias para modo desarrollo y producción.
 - webpack.config.js : Configuracion de webpack.
 - typings.json : Administrador de dependencias TypeScript. Ej: jQuery en typeScript
 - tsconfig.json : Configuración del compilador TypeScript 
@@ -93,6 +122,6 @@ export * from './about.component';
 - src/images/angular.png
 
 
-
 ####Link's:
 - http://teropa.info/blog/2016/05/19/things-that-excite-me-about-angular-2.html
+
