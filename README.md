@@ -7,6 +7,13 @@
 Basado en documentacion oficial de angular 2 con webpack, pero sin Karma ni Jasmine.
 https://angular.io/docs/ts/latest/guide/webpack.html 
 
+###Historial de cambios
+- Ejemplo basico con angular 2 ty webpack.
+- Ejemplo con Router, anidado de rutas, y parametros.
+
+###Dudas:
+- Obtener parametros de una URL. ¿Que es observable? (subscribe) (es para obtener datos de una promesa??)
+
 ### Inicio Rapido
 **Make sure you have Node version >= 4.0 and NPM >= 3**
 
