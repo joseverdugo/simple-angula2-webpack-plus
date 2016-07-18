@@ -11,7 +11,8 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['', '.js', '.ts']
+    extensions: ['', '.js', '.ts'],
+    modulesDirectories: ["web_modules", "node_modules", "bower_components"]
   },
 
   module: {
@@ -48,6 +49,10 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: 'src/index.html'
-    })
+    }),
+
+    new webpack.ResolverPlugin(
+      new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
+    )
   ]
 };

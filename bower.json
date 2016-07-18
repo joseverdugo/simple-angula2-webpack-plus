@@ -1,0 +1,22 @@
+{
+  "name": "angular2-webpack",
+  "description": "A webpack starter for angular 2",
+  "main": "",
+  "authors": [
+    "joseverdugo <joseverdugo@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/joseverdugo/simple-angula2-webpack-plus",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-elements": "PolymerElements/iron-elements#^1.0.10",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.7",
+    "gold-elements": "PolymerElements/gold-elements#^1.0.1"
+  }
+}
