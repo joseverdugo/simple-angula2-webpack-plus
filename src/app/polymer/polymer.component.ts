@@ -7,6 +7,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 
     <paper-input label="Your name here" ></paper-input>
     <paper-button>Boton</paper-button>
+     <hello-world who="{{nombreDefault}}"></hello-world>
   `
 })
 export class PolymerComponent implements OnInit { 
